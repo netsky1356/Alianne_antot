@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>It's all about me</title>
+  <link href=" " rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f0f4f8;
+    }
+
+    nav {
+      background-color: black;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ecf0f1;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+
+    header { 
+      height: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      background-color: rgba(0,0,0,0.4);
+      padding: 15px 40px;
+      border-radius: 8px;
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .main-content {
+      flex: 1 1 600px;
+    }
+
+    .main-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .name {
+      font-family: 'Arial', sans-serif;
+      font-size: 30px;
+      color: #2c3e50;
+    }
+
+    .bio-text {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 20px;
+      color: #34495e;
+    }
+
+    .sidebar {
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar-box {
+      background: #fff;
+      border-left: 5px solid #2c3e50; 
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .sidebar-box img {
+      width: 100%;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .sidebar-box h3 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+
+    .sidebar-box p {
+      font-size: 15px;
+      color: #555;
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: black;
+      color: white;
+      font-size: 15px;
+      margin-top: 40px;
+    }
+
+    .photo-gallery {
+      padding: 40px 20px;
+      background-color: #ecf0f1;
+    }
+
+    .photo-gallery .container {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .old-photo {
+      width: 100%;
+      max-width: 300px; 
+      height: 200px; 
+      overflow: hidden;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .old-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;  
+      border-radius: 8px;
+    }
+
+    .old-photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .animated {
+      animation: fadeInUp 0.8s ease both;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .old-photo {
+        max-width: 90%; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+
+<section class="container">
+  <div class="sidebar">
+    <div class="sidebar-box">
+      <h2>Education</h2>
+      <p>I started my education at Agbannawag Elementary School, 
+        then continued at Agbannawag National High School and Asia Pacific College and Business and Arts, 
+        where I discovered my interests. 
+        Now, I’m studying Information Technology (IT) at College for Research and Technology. 
+        My education has helped me grow, both academically and personally.</p>
+      </div>
+  </div>
+
+  <div class="main-content">
+    <div class="main-header">
+      <h2 class="name">Lianne Geniveve G. Salatamos</h2>
+    </div>
+
+    <div class="bio-text">
+      <p>Hi! I’m Lianne Geniveve G. Salatamos, 19 years old, and I live in Rizal Nueva Ecija. 
+        I’m a student who enjoys learning, exploring new ideas, and improving myself.
+        I’m passionate about technology, teamwork, and creativity. In my free time, 
+        I'm always sleep haha. I aim to grow as a person and make a positive impact in everything I do.</p>
+    </div>
+  </div>
+</section>
+
+<section class="photo-gallery">
+  <div class="container">
+    <div class="old-photo animated"><img src="photo1.jpeg" alt="me"><div class="old-photo-caption">Me</div></div>
+    <div class="old-photo animated"><img src="photo2.jpeg" alt="family"><div class="old-photo-caption">My Familya</div></div>
+    <div class="old-photo animated"><img src="photo3.jpeg" alt="friend1"><div class="old-photo-caption">pares</div></div>
+    <div class="old-photo animated"><img src="photo4.jpeg" alt="friend2"><div class="old-photo-caption">kupals</div></div>
+    <div class="old-photo animated"><img src="photo5.jpg" alt="friend3"><div class="old-photo-caption">Always trio</div></div>
+    <div class="old-photo animated"><img src="photo6.jpg" alt="my dog"><div class="old-photo-caption">urii bestfriend</div></div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 It's all about me Lai | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
